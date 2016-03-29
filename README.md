@@ -9,7 +9,7 @@ Live preview can be found [here.](http://ssshowcasetheme.x10host.com/)
 
 ## Instructions
 
-### Required plugins 
+Install these required plugins:
 #### Custom Post Type:
 - Post Type Slug - collection
 - Plural Label - Collections
