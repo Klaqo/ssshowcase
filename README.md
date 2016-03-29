@@ -1,8 +1,11 @@
 # ssshowcase
-a wordpress theme for showcasing collections of images (photography, portfolio, etc).
+a wordpress theme for showcasing collections of images (photography, portfolio, etc). 
+It is responsive and built on bootstrap. Lightbox functionality is included as long as the images link to themselves.
 
 ## Live Preview
 Live preview can be found [here.](http://ssshowcasetheme.x10host.com/)
+
+
 
 ## Instructions
 
@@ -32,3 +35,6 @@ Set Menu Settings to “Theme Locations” - “Primary Menu”
 
 Set Front Page to Static - Collection page
 
+## Finally…
+
+This was made as a learning experience. Feel free to take any of the original code and do as you wish with it.
