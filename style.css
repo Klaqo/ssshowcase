@@ -1,0 +1,394 @@
+/*
+Theme Name: ssshowcase
+Author: Sam Sycamore
+Author URI: http://samsycamore.com
+Description: A simple template to showcase a portfolio.
+Version: 1.0
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: black, white, light, fluid-layout, responsive-layout, custom-menu, featured-images
+
+*/
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url("fonts/glyphicons-halflings-regular.ttf");
+  src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+  border-top: 1px solid #d3d3d3;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+p {
+  text-align: center;
+  font-weight: 400;
+}
+
+a {
+  color: #333;
+}
+
+a:hover{
+  text-decoration: none;
+  color: #333;
+}
+
+.hidden{
+  display: none;
+}
+
+/* nav bar */
+
+.navcontainer {
+  top: 70px;
+  left: 70px;
+  right: 70px;
+  position: fixed;
+  z-index: 3;
+}
+
+.navbar-default {
+  background: none;
+  border: none;
+}
+
+.nav>li{
+  display:inline-block;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #000;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+
+.navbar-default .navbar-nav>li>a:visited {
+  color: #000;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #000;
+  transition: 100ms;
+}
+
+
+.logo{
+  font-size: 42px;
+  font-weight: 700;
+  color: #000 !important;
+  display: block;
+  text-align: center;
+  float: none;
+}
+
+.preactive::after {
+  content: '';
+  display: block;
+  background: lightgrey;
+  height: 3px;
+  max-width: 100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.active::after {
+  content: '';
+  display: block;
+  background: black;
+  height: 3px;
+  max-width: 100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* End of navbar */
+
+.content {
+  padding-top: 220px;
+}
+
+.post-image {
+  padding: 10px;
+}
+
+.image-overlay {
+  position: absolute;
+  z-index: 6;
+  margin: 10%;
+  opacity: 0;
+}
+
+/* collection page */
+.collection-nav {
+  font-size: 72px;
+  line-height: 0;
+  z-index: 999;
+}
+
+.collection-nav a {
+  color: #d3d3d3;
+  transition: 200ms;
+}
+
+.collection-nav a:hover {
+  color:#777;
+  transition: 200ms;
+}
+
+.collection-nav .back {
+  position: fixed;
+  top: 50%;
+  left: 0%;
+  z-index: 999;
+  transform: translateY(-50%);
+}
+
+.collection-nav .next {
+  position: fixed;
+  z-index: 999;
+  top: 50%;
+  right: 0%;
+  transform: translateY(-50%);
+}
+
+.collection {
+  text-align: center;
+  padding: 0 15%;
+}
+
+.collection .description {
+  font-style: italic;
+  width:50%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.collection .description a {
+  text-decoration: underline;
+}
+
+.collection img {
+  margin: auto;
+  padding: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.collection img:first-of-type{
+  padding-top: 30px;
+}
+
+/* blog (listing page) */
+
+.metablog {
+  color: #d3d3d3;
+  float: right;
+}
+
+.iblog p {
+  text-align: justify;
+}
+
+.readmore {
+  color: #777;
+  text-decoration: underline;
+}
+
+.pagination{
+  padding: 20px;
+  width: 100%;
+}
+
+.pagination p {
+  text-align: center;
+}
+
+.pagination p a {
+  color: #777;
+}
+
+.avatar {
+  border-radius: 100%;
+}
+
+/* single blog page */
+
+.meta-singleblog{
+  color: #d3d3d3;
+  float: right;
+}
+
+.single-blog p {
+  text-align: justify;
+}
+
+.iblog p {
+  text-align: justify;
+}
+
+/* comments */
+
+.comments h3 {
+  padding-top: 50px;
+  font-weight: 700;
+}
+
+#submit {
+  border: none;
+  background: none;
+}
+
+/*footer*/
+
+.footer-clear {
+  display: block;
+  height: 60px;
+  clear: both;
+  width: 100%;
+}
+
+footer {
+  background: rgba(255, 255, 255, 0.7);
+  bottom: 0;
+  width:100%;
+  padding-top: 10px;
+  position: fixed;
+  box-shadow: 0 -1px 0 0 #eeeeee;
+  display: none;
+}
+footer:hover {
+  background: white;
+  transition: background 200ms ease-in-out;
+}
+
+footer ul {
+  list-style: none;
+  text-transform: lowercase;
+  color:black;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+  padding: 0 1em 0.3em;
+}
+
+footer ul li a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+/*Dynamic Header fix*/
+@media only screen and (max-width : 870px){
+  .logo {
+    font-size: 24px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px){
+  .post-image { padding: 10px 100px;}
+  .collection .description {
+    width:100%;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px){
+
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 0.9em;
+  }
+
+}
+
+/* Wordpress specific CSS */
+
+/* Alignments for content */
+
+.alignleft {
+  display: inline;
+  float: left;
+}
+
+.alignright {
+  display: inline;
+  float: right;
+}
+
+.aligncenter {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Caption for content */
+
+.wp-caption {
+  margin-bottom: 1.6em;
+  max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin: 0;
+}
+
+.wp-caption-text {
+  color: #707070;
+  color: rgba(51, 51, 51, 0.7);
+  font-family: "Noto Sans", sans-serif;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 0.5em 0;
+}
+
+/* Text meant only for screen readers */
+.says,
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+}
+
+/*Gallery Caption [required]*/
+
+.gallery-caption {
+  color: #707070;
+  color: rgba(51, 51, 51, 0.7);
+  display: block;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 0.5em 0;
+}
+
+.bypostauthor > article .fn:after {
+  content: "\f304";
+  position: relative;
+  top: 5px;
+  left: 3px;
+}
