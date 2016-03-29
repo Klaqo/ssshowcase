@@ -37,4 +37,6 @@ Set Front Page to Static - Collection page
 
 ## Finally…
 
-This was made as a learning experience. Feel free to take any of the original code and do as you wish with it.
+This was made as a learning experience. Feel free to take any of the original code and do as you wish with it. 
+
+[GNU General Public License v3](http://www.gnu.org/licenses/gpl-3.0.html)
